@@ -29,13 +29,27 @@
       use for display a picture of user
       -->
       <img src="./images/user2.jpg" alt="my image" width="100" height="200" />
-      <input type="text" disabled value="This is a self-closing tag" />
-
-      <select name="" id="">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3" selected>Option 3</option>
-      </select>
+      <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <input type="submit" value="Login" />
+        <input
+          type="text"
+          disabled
+          value="This is a self-closing tag"
+          name="name"
+          id="name"
+        />
+        <select name="options" id="options">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3" selected>Option 3</option>
+        </select>
+      </form>
     </main>
     <h1>Index</h1>
     <p>This is the index page.</p>
